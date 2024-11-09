@@ -1,0 +1,73 @@
+    <style>
+  .navbar-nav li a {
+  color: black !important; /* Ensures text color is black */
+}
+
+.dropdown-menu, .dropdown-menu1 {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.nav-item:hover .dropdown-menu, .nav-item:hover .dropdown-menu1 {
+  display: block; /* Show dropdown on hover */
+}
+
+</style>
+<nav class="navbar fixed-top navbar-expand-lg bg-dark">
+  <div class="container flex justify-between items-center">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.php">
+      <img src="images/Logo.png" height="50" alt="CryptoGem Logo">
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links with Rounded Styling -->
+    <div class="collapse navbar-collapse justify-center bg-gray-300 py-3 px-8 rounded-full border-2" id="navbarResponsive">
+      <ul class="navbar-nav space-x-8 text-center">
+        <li class="nav-item">
+          <a class="nav-link text-black" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="about-us.php">Airdrop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="about-us.php">Blockchain</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black" href="#">Markets</a>
+          <!-- Dropdown menu for Markets -->
+          <div class="dropdown-menu rounded-lg p-4 bg-white shadow-lg">
+            <!-- Dropdown content for Governance and Community, as per your original example -->
+            <div class="flex gap-4">
+              <!-- Governance content here -->
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="index.php">Research</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-black" href="#">News</a>
+          <!-- Dropdown menu for News -->
+          <div class="dropdown-menu1 rounded-lg p-4 bg-white shadow-lg">
+            <!-- News content here -->
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Search Icon with Rounded Border -->
+    <a href="#" class="bg-gray-300 rounded-full p-3 ml-3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M9 17a7 7 0 100-14 7 7 0 000 14z"/>
+      </svg>
+    </a>
+  </div>
+</nav>
